@@ -1,0 +1,134 @@
+# ==========================================
+# SIERRA Project .gitignore
+# ==========================================
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# --- Distribution & Build ---
+build/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+*.whl
+*.spec
+*.manifest
+
+# --- Installers & Executables ---
+*.exe
+*.msi
+*.dmg
+*.app/
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+*.venv/
+env.bak/
+venv.bak/
+
+# --- Environment Variables & Secrets ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+
+# --- Database & Transactions (SQLite) ---
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+sierra.db
+
+# --- MediaPipe & AI/ML Model Binaries ---
+*.task
+*.tflite
+*.onnx
+*.pt
+*.pth
+*.bin
+*.weights
+pose_landmarker_lite.task
+pose_landmarker_heavy.task
+pose_landmarker_full.task
+
+# --- Media, Video Recordings & Captures ---
+captures/
+recordings/
+screenshots/
+*.avi
+*.mp4
+*.mkv
+*.mov
+*.webm
+
+# --- Testing, Coverage & Linters ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# --- Logs & Temporary Files ---
+*.log
+*.tmp
+*.temp
+*.bak
+*.cache
+*.pid
+
+# --- IDEs & Code Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+.cursor/
+
+# --- Operating System Files ---
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Web / Node.js (Web UI Companion) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- AI & Agent Metadata ---
+.gemini/
+.agents/
+.claude/
